@@ -10,6 +10,7 @@ import json
 
 option_a = os.getenv('OPTION_A', "Nodejs")
 option_b = os.getenv('OPTION_B', "Python")
+option_c = 'COBOL'
 hostname = socket.gethostname()
 proc = platform.processor()
 
@@ -48,6 +49,7 @@ def hello():
         'index.html',
         option_a=option_a,
         option_b=option_b,
+        option_c=option_c,
         hostname=hostname,
         vote=vote,
         proc=proc,
